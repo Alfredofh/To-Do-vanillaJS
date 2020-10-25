@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -50,7 +50,7 @@ table {
  body .container {
     max-width: 900px;
     margin: 0 auto;
-    background-color: #cb904d;
+    background-color: #DFCC74;
 }
 
 header {
@@ -60,21 +60,26 @@ header {
 }
 
  input {
-    width: 20%;
+    font-family: 'Montserrat', sans-serif; 
+    width: 22%;
     height: 25px;
     border-radius: 10px;
     margin-right: 10px;
 }
 
  #guardar {
-    background-color: #DFCC74;
+    background-color:#cb904d ;
 }
 
  select {
-    width: 20%;
+    font-family: 'Montserrat', sans-serif; 
+    width: 22%;
     height: 25px;
     border-radius: 10px;
     margin-right: 10px;
+}
+form option {
+    font-family: 'Montserrat', sans-serif; ;
 }
 
 main {
