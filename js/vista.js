@@ -6,27 +6,11 @@ let seccionTareas = document.querySelector('#pintar-tarea');
 let id = 1;
 
 //pintamos las tareas que vienen por defecto
-pintarTareas(tareas, seccionTareas);
+pintarTareas(tareas, seccionTareas);// no pinta
 
 
 guardar.addEventListener('click', guardarTarea);
 
-function guardarTarea(event) {
-    event.preventDefault();
-
-    let inputTarea = anadirTarea.value.trim();
-
-    let selectPrioridad = prioridad.value.trim();
-
-    if (inputTarea != "" && selectPrioridad != "-1") {
-
-        addTarea(inputTarea, selectPrioridad);
-    } else {
-
-        alert('Rellena todos los campos');
-    }
-
-}
 
 
 

@@ -50,7 +50,7 @@ table {
  body .container {
     max-width: 900px;
     margin: 0 auto;
-    background-color: #DFCC74;
+    background-color: #ffeea3;
 }
 
 header {
@@ -65,13 +65,15 @@ header {
     height: 25px;
     border-radius: 10px;
     margin-right: 10px;
+    background-color: white;
 }
 
  #guardar {
-    background-color:#cb904d ;
+    background-color:white ;
 }
 
  select {
+    background-color:white ;
     font-family: 'Montserrat', sans-serif; 
     width: 22%;
     height: 25px;
@@ -79,7 +81,7 @@ header {
     margin-right: 10px;
 }
 form option {
-    font-family: 'Montserrat', sans-serif; ;
+    font-family: 'Montserrat', sans-serif; 
 }
 
 main {
@@ -87,7 +89,25 @@ main {
     margin:  20px 0;
 }
 
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: black ;
+    margin: 5px;
+    padding: 3px;
+}
 
+.urgente {
+    background-color: rgb(190, 72, 51);
+}
+
+.diaria {
+    background-color: rgb(156, 154, 21);
+}
+
+.mensual {
+    background-color: rgb(26, 146, 142);
+}
 
 
 
