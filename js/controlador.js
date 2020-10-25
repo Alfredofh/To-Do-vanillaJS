@@ -1,9 +1,14 @@
 //pintar tareas
 function pintarTareas(pListaTareas, pSeccion) {
-    pListaTareas.forEach(tarea => {
-        printTarea(tarea, pSeccion);
-        console.log(pintarTareas);
-    });
+    if (pListaTareas.lenght != 0) {
+        pSeccion.innerHTML = "";
+
+        pListaTareas.forEach(tarea => {
+            printTarea(tarea, pSeccion);
+        });
+    } else {
+        pSeccion.innerHTML = '<h1>NO HAY COINCIDENCIAS</h1>';
+    }
 }
 
 // Creamos la sección donde se van a pintar las tareas en el HTML
