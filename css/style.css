@@ -47,22 +47,26 @@ table {
 	border-spacing: 0;
 }
 
+body {
+    background-image:url(./img/pattern.jpg) ;
+}
+
  body .container {
     max-width: 900px;
     margin: 0 auto;
-    background-color: #ffeea3;
+    background-color: #303036;
 }
 
 header {
     background-color: #75485E;
-    padding: 15px;
+    padding: 40px;
     margin: 20px 0;
 }
 
  input {
     font-family: 'Montserrat', sans-serif; 
-    width: 22%;
-    height: 25px;
+    width: 25%;
+    height: 28px;
     border-radius: 10px;
     margin-right: 10px;
     background-color: white;
@@ -75,8 +79,8 @@ header {
  select {
     background-color:white ;
     font-family: 'Montserrat', sans-serif; 
-    width: 22%;
-    height: 25px;
+    width: 25%;
+    height: 28px;
     border-radius: 10px;
     margin-right: 10px;
 }
@@ -85,28 +89,37 @@ form option {
 }
 
 main {
-    padding: 15px;
+    padding: 40px;
     margin:  20px 0;
 }
 
 h3 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
+    font-size: 30px;
     color: black ;
     margin: 5px;
     padding: 3px;
 }
 
+#pintar-tarea a {
+   color: black;
+   display: block;
+   text-align: right;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 25px;padding: 5px;
+   text-decoration: none;
+}
+
 .urgente {
-    background-color: rgb(190, 72, 51);
+    background-color: #db492c;
 }
 
 .diaria {
-    background-color: rgb(156, 154, 21);
+    background-color: #2aa3cf;
 }
 
 .mensual {
-    background-color: rgb(26, 146, 142);
+    background-color: #FFFAFF;
 }
 
 

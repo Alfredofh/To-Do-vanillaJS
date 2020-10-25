@@ -6,8 +6,6 @@ function pintarTareas(pListaTareas, pSeccion) {
         pListaTareas.forEach(tarea => {
             printTarea(tarea, pSeccion);
         });
-    } else {
-        pSeccion.innerHTML = '<h1>NO HAY COINCIDENCIAS</h1>';
     }
 }
 
@@ -43,8 +41,8 @@ function printTarea(pTarea, pSeccion) {
 
 function eliminarElemento(event) {
     event.preventDefault();
-    let liquequieroborrar = event.target.parentNode;
-    liquequieroborrar.parentNode.removeChild(liquequieroborrar);
+    let borrarTarea = event.target.parentNode;
+    borrarTarea.parentNode.removeChild(borrarTarea);
     let idBorrar = event.target.dataset.id;
     let posicion = listTareas.findIndex(contacto => contacto.id == idBorrar);
     listTareas.splice(posicion, id);
@@ -93,4 +91,13 @@ function guardarTarea(event) {
     }
 
 }
+
+//filtrar por prioridad
+
+function filtrarPorPrioridad(pPrioridad, pListaPrioridad) {
+    const listaFiltrada = pListaPrioridad.filter(tarea => tarea.prioridad.toLowerCase()
+        == pPrioridad.toLowerCase());
+    return listaFiltrada;
+}
+
 
