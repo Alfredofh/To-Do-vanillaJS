@@ -1,4 +1,4 @@
-const tareas = new Array();
+const listTareas = new Array();
 [
     {
         idTarea: 1,

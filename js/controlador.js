@@ -34,7 +34,6 @@ function printTarea(pTarea, pSeccion) {
     a.href = "#";
     a.dataset.id = id;
     article.appendChild(a);
-    pSection.appendChild(article);
 }
 
 function eliminarElemento(event) {
@@ -42,10 +41,8 @@ function eliminarElemento(event) {
     let liquequieroborrar = event.target.parentNode;
     liquequieroborrar.parentNode.removeChild(liquequieroborrar);
     let idBorrar = event.target.dataset.id;
-    let posicion = tareas.findIndex(contacto => contacto.id == idBorrar);
-    tareas.splice(posicion, id);
-    console.log(tareas);
-
+    let posicion = listTareas.findIndex(contacto => contacto.id == idBorrar);
+    listTareas.splice(posicion, id);
 }
 
 
@@ -53,18 +50,18 @@ function eliminarElemento(event) {
 
 function addTarea(pTarea, pPrioridad) {
     const newTarea = {
-        idTarea: id,
+        id: id,
         nombre: pTarea,
         prioridad: pPrioridad
     }
     //comprobar duplicados
-    let existe = tareas.findIndex(tarea => {
+    let existe = listTareas.findIndex(tarea => {
         return tarea.nombre == pTarea && tarea.prioridad == pPrioridad;
     })
 
     if (existe == -1) {
-        tareas.push(newTarea);
-        pintarTareas(tareas, seccionTareas);
+        listTareas.push(newTarea);
+        pintarTareas(listTareas, seccionTareas);
         id++;
 
     } else {
@@ -82,7 +79,7 @@ function guardarTarea(event) {
 
     let selectPrioridad = prioridad.value.trim();
 
-    if (inputTarea != "" && selectPrioridad != "") {
+    if (inputTarea != "" && selectPrioridad != "-1") {
 
         addTarea(inputTarea, selectPrioridad);
     } else {

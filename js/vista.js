@@ -6,7 +6,7 @@ let seccionTareas = document.querySelector('#pintar-tarea');
 let id = 1;
 
 //pintamos las tareas que vienen por defecto
-pintarTareas(tareas, seccionTareas);// no pinta
+pintarTareas(listTareas, seccionTareas);// no pinta
 
 
 guardar.addEventListener('click', guardarTarea);
