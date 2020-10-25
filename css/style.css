@@ -46,3 +46,47 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+ body .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #cb904d;
+}
+
+header {
+    background-color: #75485E;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+ input {
+    width: 20%;
+    height: 25px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+ #guardar {
+    background-color: #DFCC74;
+}
+
+ select {
+    width: 20%;
+    height: 25px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+main {
+    padding: 15px;
+    margin:  20px 0;
+}
+
+
+
+
+
+
+
+
+
