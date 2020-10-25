@@ -15,10 +15,10 @@
     <div class="container">
         <header>
             <div class="form-container">
-                <form>
+                <form action="">
                     <input type="text" id="add-tarea" placeholder="Introduce una nueva tarea">
                     <select id="prioridad">
-                        <option value="">Selecciona la prioridad</option>
+                        <option value="-1">Selecciona la prioridad</option>
                         <option value="diaria">Diaria</option>
                         <option value="mensual">Mensual</option>
                         <option value="urgente">Urgente</option>
@@ -38,9 +38,15 @@
                 </select>
                 <input type="text" id="buscar" placeholder="Busca la tarea">
             </div>
-
-            <section id="">
-
+            <section id="pintar-tarea">
+                <!--  <article class="articulo-tarea">
+                    <div class="titulo-tarea">
+                        <h3>
+                            Tarea
+                        </h3> 
+                        <input class="btnEliminar" type="button" value="Eliminar">
+                    </div>
+                </article>-->
             </section>
         </main>
     </div>
@@ -49,8 +55,9 @@
 
 
 
-    <script src="js/vista.js"></script>
     <script src="js/controlador.js"></script>
+    <script src="js/vista.js"></script>
+
 </body>
 
 </html>
