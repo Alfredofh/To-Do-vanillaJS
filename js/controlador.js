@@ -92,7 +92,7 @@ function guardarTarea(event) {
 
 }
 
-//filtrar por prioridad **NO ME FILTRA, EN EL LOG ME DEVUELVE SIEMPRE UN ARRAY CON TODAS LAS TAREAS
+//filtrar por prioridad 
 
 function cogerPrioridad(event) {
     console.log(listTareas, event.target.value);
@@ -107,6 +107,17 @@ function filtrarPorPrioridad(pPrioridad, pListaPrioridad) {
 
 
 //Buscar por palabra
+
+
+function filtrarPorPalabra(pListaTareas, pPalabraBuscar) {
+    const filterList = pListaTareas.filter(tarea => {
+        let nombre = tarea.nombre;
+        return nombre.includes(pPalabraBuscar);
+    })
+    return filterList
+}
+
+
 
 
 

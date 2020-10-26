@@ -6,6 +6,7 @@ let seccionTareas = document.querySelector('#pintar-tarea');
 let id = 1;
 let filtroPrioridad = document.querySelector('#prioridad2');
 
+let buscar = document.querySelector('#buscar');
 
 //pintamos las tareas que vienen por defecto
 pintarTareas(listTareas, seccionTareas);// no pinta
@@ -17,7 +18,15 @@ guardar.addEventListener('click', guardarTarea);
 
 filtroPrioridad.addEventListener('click', cogerPrioridad);
 
+//buscador por palabra 
 
+buscar.addEventListener('input', buscadorPorPalabra);
+
+function buscadorPorPalabra(event) {
+    let palabraBuscar = event.target.value.trim();
+    let listaFiltrada = filtrarPorPalabra(listTareas, palabraBuscar);
+    pintarTareas(listaFiltrada, seccionTareas);
+}
 
 
 
