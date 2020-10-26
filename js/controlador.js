@@ -92,12 +92,22 @@ function guardarTarea(event) {
 
 }
 
-//filtrar por prioridad
+//filtrar por prioridad **NO ME FILTRA, EN EL LOG ME DEVUELVE SIEMPRE UN ARRAY CON TODAS LAS TAREAS
+
+/* function cogerPrioridad(event) {
+    console.log(listTareas, event.target.value);
+    filtrarPorPrioridad(listTareas, event.target.value);
+}
+
 
 function filtrarPorPrioridad(pPrioridad, pListaPrioridad) {
-    const listaFiltrada = pListaPrioridad.filter(tarea => tarea.prioridad.toLowerCase()
-        == pPrioridad.toLowerCase());
-    return listaFiltrada;
-}
+    const result = pPrioridad.filter(tarea => tarea.pPrioridad == pListaPrioridad);
+    return pintarTareas(result, seccionTareas);
+} */
+
+
+//Buscar por palabra
+
+
 
 

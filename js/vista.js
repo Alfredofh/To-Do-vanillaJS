@@ -15,7 +15,7 @@ guardar.addEventListener('click', guardarTarea);
 
 //buscar por prioridad 
 
-filtroPrioridad.addEventListener('click', filtrarPorPrioridad);
+filtroPrioridad.addEventListener('click', cogerPrioridad);
 
 
 
