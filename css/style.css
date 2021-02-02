@@ -65,8 +65,10 @@ header {
 
  input {
     font-family: 'Montserrat', sans-serif; 
+    border: none;
     width: 25%;
     height: 28px;
+    padding: 10px;
     border-radius: 10px;
     margin-right: 10px;
     background-color: white;
@@ -74,16 +76,26 @@ header {
 
  #guardar {
     background-color:white ;
+    height: 48px;
+    cursor: pointer;
+}
+
+#guardar:hover {
+    background-color:#303036 ;
+    color: white;
+    transition: 300ms all;
 }
 
  select {
     background-color:white ;
     font-family: 'Montserrat', sans-serif; 
+    border: none;
     width: 25%;
-    height: 28px;
+    height: 48px;
     border-radius: 10px;
     margin-right: 10px;
 }
+
 form option {
     font-family: 'Montserrat', sans-serif; 
 }
@@ -91,6 +103,7 @@ form option {
 main {
     padding: 40px;
     margin:  20px 0;
+    background-color: rgb(68, 68, 68);
 }
 
 h3 {

@@ -9,6 +9,10 @@ function pintarTareas(pListaTareas, pSeccion) {
     }
 }
 
+function tareasDefinidas(pListaTareas) {
+
+}
+
 // Creamos la sección donde se van a pintar las tareas en el HTML
 
 function printTarea(pTarea, pSeccion) {
@@ -18,16 +22,9 @@ function printTarea(pTarea, pSeccion) {
     let div = document.createElement('div');
     div.classList.add('titulo-tarea');
     let h3 = document.createElement('h3');
-    //let input = document.createElement('input');
-
-    /* input.setAttribute("type", "button");
-    input.value = "Eliminar";
-    input.classList.add('btnEliminar'); */
-
     let h3Content = document.createTextNode(`${pTarea.nombre}`);
     h3.appendChild(h3Content);
     div.appendChild(h3);
-    // div.appendChild(input);
     article.appendChild(div);
     pSeccion.appendChild(article);
 
