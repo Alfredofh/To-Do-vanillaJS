@@ -2,15 +2,10 @@
 function pintarTareas(pListaTareas, pSeccion) {
     if (pListaTareas.lenght != 0) {
         pSeccion.innerHTML = "";
-
         pListaTareas.forEach(tarea => {
             printTarea(tarea, pSeccion);
         });
     }
-}
-
-function tareasDefinidas(pListaTareas) {
-
 }
 
 // Creamos la sección donde se van a pintar las tareas en el HTML

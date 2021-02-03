@@ -1,3 +1,4 @@
+
 const listTareas = new Array();
 [
     {
@@ -16,3 +17,34 @@ const listTareas = new Array();
         prioridad: 'mensual'
     }
 ];
+//todo pintar tareas de muestra 
+
+//Guardar LocalStorage
+function guardarLocalStorage() {
+
+    let tarea = {
+        titulo: "tarea locastorage",
+        prioridad: "mensual"
+    }
+
+    localStorage.setItem("tarea", JSON.stringify(tarea));
+}
+
+guardarLocalStorage();
+
+//Obtener datos localStorage
+
+function devuelveLocalStorage() {
+
+    if (JSON.parse(localStorage.getItem("tarea"))) {
+        let tarea = JSON.parse(localStorage.getItem("tarea")); //parse convierte el string en object 
+
+        console.log(tarea);
+    } else {
+        console.log("No hay datos en el local storage");
+    }
+}
+
+
+devuelveLocalStorage();
+
